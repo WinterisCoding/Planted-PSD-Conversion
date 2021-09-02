@@ -1,0 +1,6 @@
+@mixin heading($size-value) {
+  font-size: $size-value;
+  font-family: 'Josephin Sans', sans-serif;
+  font-weight: 700;
+  color: $black
+}

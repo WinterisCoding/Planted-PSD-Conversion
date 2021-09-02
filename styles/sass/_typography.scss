@@ -1,0 +1,58 @@
+// <!-- Fonts ----------------------------------- -->
+// Roboto         font-family: 'Roboto', sans-serif;
+// Josephin Sans  font-family: 'Josefin Sans', sans-serif;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 125%;
+}
+
+h1 {
+  font-size: 8.3rem;
+  font-family: 'Josephin Sans', sans-serif;
+  font-weight: 400;
+  color: $off-white;
+}
+
+h2 {
+  @include heading(4rem);
+  line-height: 4.6rem;
+}
+
+h3 {
+  @include heading(2.81rem);
+  letter-spacing: 1.3px;
+}
+
+h4 {
+  @include heading(2.15rem);
+  letter-spacing: 1.3px;
+}
+
+h5 {
+  @include heading(2.1rem);
+  letter-spacing: 1px;
+}
+
+h6 {
+  @include heading(1.6rem);
+  letter-spacing: 1px;
+}
+
+.h7 {
+  @include heading(1rem);
+  line-height: 32px;
+}
+
+button {
+  @include heading(1rem);
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+input,
+label {
+  font-family: 'Josephin Sans', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+}

@@ -234,3 +234,79 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 125%;
+}
+
+h1 {
+  font-size: 8.3rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 400;
+  color: #F0EFED;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 4.6rem;
+}
+
+h3 {
+  font-size: 2.81rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  letter-spacing: 1.3px;
+}
+
+h4 {
+  font-size: 2.15rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  letter-spacing: 1.3px;
+}
+
+h5 {
+  font-size: 2.1rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  letter-spacing: 1px;
+}
+
+.h7 {
+  font-size: 1rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 32px;
+}
+
+button {
+  font-size: 1rem;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+input,
+label {
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+}
