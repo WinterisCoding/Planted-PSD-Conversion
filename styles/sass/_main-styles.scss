@@ -19,6 +19,118 @@
 }
 
 // ***********************
-// Explore Section
+// Explore Section Styling
 // ***********************
 
+.explore-container {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.plants-container {
+  position: relative;
+}
+
+.plants-container img {
+  box-shadow: $box-shadow-right;
+}
+
+.workshops-container img {
+  box-shadow: $box-shadow-left
+}
+
+
+// ***********************
+// Hightlights Styling
+// ***********************
+
+.highlights {
+  background-color: $off-white;
+  padding: 10rem 0 3rem 0;
+}
+
+.highlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.info-block {
+  display: flex;
+  width: 50%;
+}
+
+.icon-container {
+  display: flex;
+  padding: 2rem 0;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.info-block-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+// ************************
+// Hero Image Styling
+// ************************
+
+.hero-image {
+  background-image: url(../assets/banner-image.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+}
+
+// ************************
+// Founder Styling
+// ************************
+
+.founder {
+  background-color: $off-white;
+}
+
+.founder-container {
+  display: flex;
+  padding: 8rem 0;
+  justify-content: space-evenly;
+}
+
+.founder-image-container {
+  display: flex;
+}
+
+.founder-image-container img {
+  box-shadow: $box-shadow-right;
+}
+
+.founder-text-container {
+  width: 70%;
+  padding: 0 3rem;
+}
+
+// **************************
+// Gallery Styling
+// **************************
+
+.gallery {
+  padding: 4rem;
+}
+
+.gallery-container {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0;
+  display:flex;
+  justify-content: space-between;
+}
+
+.gallery-container li {
+  padding: 1rem;
+}

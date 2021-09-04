@@ -37,11 +37,13 @@ h4 {
 h5 {
   @include heading(2.1rem);
   letter-spacing: 1px;
+  margin: 0
 }
 
 h6 {
   @include heading(1.6rem);
   letter-spacing: 1px;
+  margin: 0
 }
 
 .h7 {
