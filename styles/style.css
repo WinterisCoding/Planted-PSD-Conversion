@@ -247,6 +247,10 @@ h1 {
   color: #F0EFED;
 }
 
+h1 span {
+  color: #F8e71C;
+}
+
 h2 {
   font-size: 4rem;
   font-family: "Josephin Sans", sans-serif;
@@ -302,6 +306,10 @@ button {
   color: #2C2C2C;
   line-height: 32px;
   letter-spacing: 1px;
+  background-color: #0E902D;
+  color: #F0EFED;
+  border-style: none;
+  padding: 0.25rem 1.5rem;
 }
 
 input,
@@ -313,6 +321,11 @@ label {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F0EFED;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
 }
 
 .wrapper {
@@ -330,9 +343,108 @@ ul {
   margin: 0;
 }
 
-header {
+.home-header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
   background-repeat: none;
   height: 80vh;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2C2C2C;
+  width: 65%;
+}
+
+.home-header nav {
+  background: none;
+}
+
+.header-nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav-menu li {
+  padding: 0 0.25rem;
+}
+
+.planted-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.planted-logo a {
+  text-transform: none;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header-container h1 span {
+  display: block;
+}
+
+.header-box-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer {
+  background-color: #2C2C2C;
+  text-align: center;
+  color: #F0EFED;
+  padding: 0.5rem;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+.blog-page-header {
+  background-image: url(../assets/blog-header-1.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
+.contact-page-header {
+  background-image: url(../assets/contact-header-1.jpg);
+  background-size: cover;
+  background-repeat: none;
+  height: 50vh;
 }
