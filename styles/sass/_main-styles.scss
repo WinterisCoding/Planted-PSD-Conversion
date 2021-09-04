@@ -1,0 +1,24 @@
+// *********************
+// About Planted Section
+// *********************
+
+.about {
+  display: flex;
+  background-color: $off-white;
+  padding: 8rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  width: 70%;
+  margin: 1.5rem auto;
+}
+
+// ***********************
+// Explore Section
+// ***********************
+

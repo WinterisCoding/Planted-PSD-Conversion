@@ -26,6 +26,7 @@ h2 {
 h3 {
   @include heading(2.81rem);
   letter-spacing: 1.3px;
+  margin: 0;
 }
 
 h4 {
@@ -72,4 +73,8 @@ a {
   color: $off-white;
   letter-spacing: 2px;
   font-size: 1.4rem;
+}
+
+p {
+  line-height: 32px;
 }
