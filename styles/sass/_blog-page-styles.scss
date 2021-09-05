@@ -16,6 +16,9 @@
 // ******************
 // Post Styling 
 // ******************
+main {
+  background-color: $off-white;
+}
 
 .post-container {
   display: flex;
@@ -33,13 +36,41 @@
   box-shadow: $box-shadow-left;
 }
 
+// **********************
+// Aside Styling
+// **********************
+
 aside {
   display: flex;
   width: 30%;
   flex-direction: column;
-  padding: 3rem;
+  padding: 5rem;
+  margin-left: 2rem;
 }
 
+.aside-image-container {
+  background: white;
+  position: relative;
+}
+
+.aside-image-container img {
+}
+
+.blog-aside-container  {
+  background-color: white;
+  padding: 2rem;
+}
+
+.blog-aside-recent-posts ul {
+  margin: 1rem 0rem;
+}
+
+.blog-aside-recent-posts li::before {
+  content: "•";
+  color: $green;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
 // *********************
 // Comment Styling
 // *********************
