@@ -2,5 +2,83 @@
   background-image: url(../assets/contact-header-1.jpg);
   background-size: cover;
   background-repeat: none;
-  height: 50vh;
+  height: 55vh;
 }
+
+.contact-page-header .header-nav {
+  padding-left: 6rem;
+}
+
+// *******************
+// Contact Styles
+// *******************
+
+.info-container {
+  display: flex;
+  background-color: $off-white;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container-text {
+  width: 39%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.info-container-text p {
+  margin: .25rem 0;
+}
+
+.info-container-text a {
+  color: $black;
+  text-transform: none;
+  margin: 1rem 0;
+}
+
+.info-container-form {
+  width: 60%;
+}
+
+.form-box {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: $box-shadow-left;
+}
+
+.form-box input {
+  width: 45%;
+  border: none;
+  padding: 2rem;
+  border-bottom: 1px solid $green;
+}
+
+.form-box textarea {
+  margin: 2rem 0;
+  width: 100%;
+  resize: none;
+  padding: 2rem;
+  border: 1px solid $green;
+}
+
+.form-box button {
+  width: 100%;
+}
+
+.icons {
+  color: $green;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.icons li {
+  padding-right: 1.5rem;
+}
+

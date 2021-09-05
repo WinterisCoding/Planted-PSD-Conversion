@@ -35,41 +35,43 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../index.html#about">About</a></li>
           <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html"><span>Contact</span></a></li>
         </ul> <!-- end of header-nav-menu-->
       </nav> <!-- end of contact-page-nav -->
       <h1><span>Get in Touch</span></h1>
     </header> <!-- end of contact-page-header -->
-    
+
     <main>
       <section class="contact-page-info">
         <div class="info-container">
           <div class="info-container-text">
-            <div class="icons">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-whatsapp"></i>
-            </div>
+            <ul class="icons">
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-whatsapp"></i></li>
+            </ul> <!--end of icons-->
             <a href="#">info@email.com</a>
-            <p>123-456-7890</p>
+            <p>123 - 456 - 7890</p>
             <p>123 Queen Street West, Unit 10</p>
             <p>Toronto, Ontario</p>
             <p>M5V2D5</p>
           </div> <!-- end info-container-text -->
           <div class="info-container-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" value="name">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button type="submit">Submit</button>
-          </div> <!-- end of infor-container-form-->
+            <form action="submit" class="form-box">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name">
+              <label for="email" class="sr-only">Email Address</label>
+              <input type="email" placeholder="Email address" name="email" id="email">
+              <label for="message" class="sr-only">Message</label>
+              <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+              <button type="submit">Submit</button>
+            </form> <!-- end of form-->
+          </div> <!-- end of info-container-form-->
         </div> <!-- end of info-container -->
-      </section> <!-- end of section-->
+      </section> <!-- end of contact-page-info-->
     </main> <!-- end of main -->
-
+    
     <footer>
       <p>Copyright Juno College of Technology © 2021 </p>
     </footer>
