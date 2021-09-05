@@ -734,6 +734,7 @@ aside {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 3rem;
+  margin-bottom: 2rem;
 }
 
 .post-comment {
@@ -1016,5 +1017,50 @@ aside {
 
   .gallery-container li:nth-child(2) {
     display: none;
+  }
+
+  .blog-page-header {
+    height: 40vh;
+  }
+
+  .blog-page-header h1 {
+    text-align: center;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .mission {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .mission-image-container {
+    margin-bottom: 2rem;
+  }
+
+  .comment-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .comment-image-container {
+    width: 25%;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .post-comment {
+    padding: 0;
+  }
+
+  .post-comment input {
+    width: 100%;
+    margin: 1rem 0rem;
+    background-color: #F0EFED;
   }
 }
