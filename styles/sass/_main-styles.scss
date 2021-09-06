@@ -21,6 +21,9 @@
 // ***********************
 // Explore Section Styling
 // ***********************
+.explore {
+  background-color: white;
+}
 
 .explore-container {
   display: flex;
@@ -38,7 +41,6 @@
 .workshops-container img {
   box-shadow: $box-shadow-left
 }
-
 
 // ***********************
 // Hightlights Styling
@@ -120,7 +122,8 @@
 // **************************
 
 .gallery {
-  padding: 4rem;
+  padding: 4rem 0rem;
+  background-color: white;
 }
 
 .gallery-container {

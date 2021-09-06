@@ -1,0 +1,88 @@
+@media (max-width: 940px) {
+  .header-nav-menu {
+    width: 100%;
+  }
+  .blog-page-header .header-nav,
+  .contact-page-header .header-nav {
+    padding-left: 4rem;
+  }
+  h1 {
+    font-size: 7.5rem;
+  }
+  .about {
+    padding: 4rem 0rem;
+  }
+  .explore {
+    padding: 1rem 0;
+  }
+  .explore-container {
+    padding: 0;
+  }
+  .plants-container {
+    padding: 1rem;
+  }
+  .plants-container-text-box {
+    margin-top: 1rem;
+  }
+  .workshops-container {
+    padding: 1rem;
+  }
+  .workshops-container-text-box {
+    margin-bottom: 1rem;
+  }
+  .highlights {
+    padding: 0;
+  }
+  .highlights-container {
+    padding: 2rem 0rem;
+  }
+  .founder-image-container img {
+    object-fit: cover;
+  }
+  // ********************
+  // Blog Styling
+  // ********************
+  aside {
+    padding: 3rem 0;
+    margin-left: 1rem;
+  }
+  .blog-page-header h1,
+  .contact-page-header h1 {
+    font-size: 5.5rem;
+  }
+  .blog-aside-container {
+    padding: 1rem;
+  }
+  .mission {
+    padding: 3rem;
+  }
+  .mission-image-container {
+    margin-bottom: 2rem;
+  }
+  .mission-image-container img{
+    margin-top: -10rem;
+  }
+  .post-comment {
+    flex-direction: column;
+  }
+  .post-comment input {
+    width: 100%;
+    margin: 1rem 0rem;
+    background-color: $off-white;
+  }
+  // ***********************
+  // Contact Styling
+  // ************************
+  .form-box {
+    margin-top: -7rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+  }
+  .form-box input {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .info-container-form {
+    padding-right: 1rem;
+  }
+}
