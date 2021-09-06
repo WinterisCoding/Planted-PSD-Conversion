@@ -7,11 +7,30 @@
     color: $off-white;
     margin: 2rem;
     font-size: 3rem;
+    z-index: 20;
   }
   .mobile-menu-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+  // Mini-nav-menu
+  .mini-nav-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 15;
+    background-color: $black;
+    top: 100%;
+  }
+  .mini-nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .mini-nav-menu li a {
+    font-size: 3.2rem;
   }
   .header-container {
     display: flex;
@@ -29,9 +48,14 @@
   .explore-container {
     flex-direction: column;
   }
-
   .plants-container {
     flex-direction: column;
+  }
+  .plants-container img {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 0;
   }
   .plants-container-text-box {
     width: 100%;
@@ -39,6 +63,11 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem 0;
+  }
+  .workshops-container img {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
   }
   .workshops-container-text-box {
     padding: 2rem 0;
