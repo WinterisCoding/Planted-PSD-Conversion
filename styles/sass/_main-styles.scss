@@ -1,7 +1,6 @@
 // *********************
 // About Planted Section
 // *********************
-
 .about {
   display: flex;
   background-color: $off-white;
@@ -17,7 +16,6 @@
   width: 70%;
   margin: 1.5rem auto;
 }
-
 // ***********************
 // Explore Section Styling
 // ***********************
@@ -28,18 +26,30 @@
 .explore-container {
   display: flex;
   padding: 2rem 0;
+  justify-content: space-between;
 }
 
 .plants-container {
-  position: relative;
+  padding: 0 2rem;
 }
 
 .plants-container img {
   box-shadow: $box-shadow-right;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+  width: 120%;
+  margin-left: -7rem;
+}
+
+.workshops-container {
+  padding: 0 2rem;
 }
 
 .workshops-container img {
-  box-shadow: $box-shadow-left
+  box-shadow: $box-shadow-left;
+  margin-top: 3rem;
+  margin-bottom: -4rem;
+  width: 120%;
 }
 
 // ***********************

@@ -1,7 +1,6 @@
 // ******************
 // Header Styling
 // ******************
-
 .blog-page-header {
   background-image: url(../assets/blog-header-1.jpg);
   background-size: cover;
@@ -11,6 +10,16 @@
 
 .blog-page-header .header-nav {
   padding-left: 6rem;
+}
+
+.blog-page-header-container {
+  display: flex;
+}
+
+.blog-page-header-container h1 {
+  font-size: 6.3rem;
+  padding-left: 8vw;
+  padding-top: 15vh
 }
 
 // ******************
@@ -34,6 +43,9 @@ main {
 
 .mission-image-container img {
   box-shadow: $box-shadow-left;
+  width: 120%;
+  margin-top: -15rem;
+  margin-bottom: 2rem;
 }
 
 // **********************
@@ -44,13 +56,19 @@ aside {
   display: flex;
   width: 30%;
   flex-direction: column;
-  padding: 5rem;
-  margin-left: 2rem;
+  padding: 5rem 0rem;
+  margin-left: 9%;
 }
 
 .aside-image-container {
   background: white;
   position: relative;
+}
+
+.aside-image-container img {
+  width: 130%;
+  margin-left: -35%;
+  margin-top: -10%;
 }
 
 .blog-aside-container  {
@@ -86,7 +104,7 @@ aside {
   display: flex;
   width: 70%;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 3rem 0 6.5rem;
 }
 
 .comment-box {

@@ -246,6 +246,8 @@ h1 {
   font-family: "Josephin Sans", sans-serif;
   font-weight: 400;
   color: #F0EFED;
+  position: relative;
+  z-index: 10;
 }
 
 h1 span {
@@ -342,6 +344,10 @@ p {
   line-height: 32px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -394,8 +400,22 @@ ul {
           align-items: center;
 }
 
+.header-box-image-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-box-image-container img {
+  height: 70vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -26rem;
+  margin-right: -42.6%;
+}
+
 .header-nav-menu li {
-  padding: 0 0.25rem;
+  padding: 0 0.45rem;
 }
 
 .fa-bars {
@@ -413,6 +433,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .planted-logo a {
@@ -423,6 +444,7 @@ ul {
 
 .header-container {
   text-align: center;
+  z-index: 10;
 }
 
 .header-container h1 span {
@@ -475,20 +497,34 @@ ul {
   display: -ms-flexbox;
   display: flex;
   padding: 2rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .plants-container {
-  position: relative;
+  padding: 0 2rem;
 }
 
 .plants-container img {
   -webkit-box-shadow: 1rem 1rem #F8e71C;
           box-shadow: 1rem 1rem #F8e71C;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+  width: 120%;
+  margin-left: -7rem;
+}
+
+.workshops-container {
+  padding: 0 2rem;
 }
 
 .workshops-container img {
   -webkit-box-shadow: -1rem 1rem #F8e71C;
           box-shadow: -1rem 1rem #F8e71C;
+  margin-top: 3rem;
+  margin-bottom: -4rem;
+  width: 120%;
 }
 
 .highlights {
@@ -619,6 +655,18 @@ footer p {
   padding-left: 6rem;
 }
 
+.blog-page-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-page-header-container h1 {
+  font-size: 6.3rem;
+  padding-left: 8vw;
+  padding-top: 15vh;
+}
+
 main {
   background-color: #F0EFED;
 }
@@ -648,6 +696,9 @@ main {
 .mission-image-container img {
   -webkit-box-shadow: -1rem 1rem #F8e71C;
           box-shadow: -1rem 1rem #F8e71C;
+  width: 120%;
+  margin-top: -15rem;
+  margin-bottom: 2rem;
 }
 
 aside {
@@ -659,13 +710,19 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5rem;
-  margin-left: 2rem;
+  padding: 5rem 0rem;
+  margin-left: 9%;
 }
 
 .aside-image-container {
   background: white;
   position: relative;
+}
+
+.aside-image-container img {
+  width: 130%;
+  margin-left: -35%;
+  margin-top: -10%;
 }
 
 .blog-aside-container {
@@ -710,7 +767,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 3rem 0 6.5rem;
 }
 
 .comment-box {
@@ -782,6 +839,20 @@ aside {
 
 .contact-page-header .header-nav {
   padding-left: 6rem;
+  width: 100%;
+}
+
+.contact-page-header-container {
+  width: 27vw;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.contact-page-header-container h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  padding: 2rem;
 }
 
 .info-container {
@@ -826,6 +897,9 @@ aside {
 
 .info-container-form {
   width: 60%;
+  margin-right: 2%;
+  margin-top: -25%;
+  margin-bottom: 4%;
 }
 
 .form-box {
@@ -882,6 +956,10 @@ aside {
   .blog-page-header .header-nav,
 .contact-page-header .header-nav {
     padding-left: 4rem;
+  }
+
+  .header-box-image-container {
+    display: none;
   }
 
   h1 {
@@ -968,8 +1046,18 @@ aside {
     background-color: #F0EFED;
   }
 
+  .contact-page-header-container {
+    width: 35vh;
+    margin-left: 1%;
+    margin-top: 8%;
+  }
+
+  .contact-page-header-container h1 {
+    font-size: 4.4rem;
+  }
+
   .form-box {
-    margin-top: -7rem;
+    margin-top: -2rem;
     margin-bottom: 3rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1147,8 +1235,11 @@ aside {
     height: 40vh;
   }
 
-  .blog-page-header h1 {
-    text-align: center;
+  .blog-page-header-container h1 {
+    font-size: 6.3rem;
+    padding-left: 0;
+    padding-top: 0;
+    margin: 0 auto;
   }
 
   aside {
@@ -1162,6 +1253,7 @@ aside {
 
   .mission-image-container {
     margin-bottom: 2rem;
+    padding: 0 2rem;
   }
 
   .mission img {
@@ -1196,7 +1288,13 @@ aside {
     height: 45vh;
   }
 
-  .contact-page-header h1 {
+  .contact-page-header-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -2rem;
+  }
+
+  .contact-page-header-container h1 {
     text-align: center;
   }
 
@@ -1209,6 +1307,10 @@ aside {
 
   .info-container-form {
     width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
   }
 
   .info-container-text {
@@ -1289,5 +1391,9 @@ aside {
   .comment-text-container {
     width: 100%;
     padding: 0;
+  }
+
+  .contact-page-header-container h1 {
+    margin: 0 auto;
   }
 }

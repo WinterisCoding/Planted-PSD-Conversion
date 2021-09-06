@@ -12,6 +12,8 @@ h1 {
   font-family: 'Josephin Sans', sans-serif;
   font-weight: 400;
   color: $off-white;
+  position: relative;
+  z-index: 10;
 }
 
 h1 span {

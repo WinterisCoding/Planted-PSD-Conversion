@@ -94,8 +94,11 @@
   .blog-page-header {
     height: 40vh;
   }
-  .blog-page-header h1 {
-    text-align: center;
+  .blog-page-header-container h1 {
+    font-size: 6.3rem;
+    padding-left: 0;
+    padding-top: 0;
+    margin: 0 auto;
   }
   aside {
     display: none;
@@ -106,6 +109,7 @@
   }
   .mission-image-container {
     margin-bottom: 2rem;
+    padding: 0 2rem;
   }
   .mission img {
     margin-top: -4rem;
@@ -135,7 +139,12 @@
   .contact-page-header {
     height: 45vh;
   }
-  .contact-page-header h1 {
+  .contact-page-header-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -2rem;
+  }
+  .contact-page-header-container h1 {
     text-align: center;
   }
   .info-container {
@@ -143,6 +152,10 @@
   }
   .info-container-form {
     width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
   }
   .info-container-text {
     width: 100%;

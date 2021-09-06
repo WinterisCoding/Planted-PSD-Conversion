@@ -6,6 +6,9 @@
   .contact-page-header .header-nav {
     padding-left: 4rem;
   }
+  .header-box-image-container {
+    display: none;
+  }
   h1 {
     font-size: 7.5rem;
   }
@@ -73,8 +76,16 @@
   // ***********************
   // Contact Styling
   // ************************
+  .contact-page-header-container {
+    width: 35vh;
+    margin-left: 1%;
+    margin-top: 8%;
+  }
+  .contact-page-header-container h1 {
+    font-size: 4.4rem;
+  }
   .form-box {
-    margin-top: -7rem;
+    margin-top: -2rem;
     margin-bottom: 3rem;
     flex-direction: column;
   }
