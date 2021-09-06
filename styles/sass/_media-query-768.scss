@@ -1,4 +1,4 @@
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .header-nav {
     display: none;
   }
@@ -81,6 +81,9 @@
   }
   .gallery {
     padding: 0;
+  }
+  .gallery-container {
+    flex-direction: column;
   }
   .gallery-container li:nth-child(2) {
     display: none;
