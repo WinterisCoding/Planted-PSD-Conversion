@@ -14,7 +14,6 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    overflow: hidden;
   }
   // Mini-nav-menu
   .mini-nav-menu {
@@ -23,15 +22,28 @@
     z-index: 15;
     background-color: $black;
     top: 100%;
+    visibility: hidden;
   }
   .mini-nav-menu li {
     width: 100%;
     text-align: center;
     padding: 2rem 0;
   }
-  .mini-nav-menu li a {
-    font-size: 3.2rem;
+  .mini-nav-menu li:hover,
+  .mini-nav-menu li:focus {
+    background-color: rgb(83, 83, 83);
   }
+  .mini-nav-menu li a {
+    font-size: 2.8rem;
+  }
+  .mini-menu {
+    position: absolute;
+    opacity: 10%;
+  }
+  .mini-menu:checked + .mini-nav-menu {
+    visibility: visible;
+  }
+
   .header-container {
     display: flex;
     justify-content: center;

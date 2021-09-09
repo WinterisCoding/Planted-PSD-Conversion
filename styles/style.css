@@ -367,6 +367,15 @@ ul {
   display: none;
 }
 
+.fa-circle {
+  color: #F8e71C;
+  vertical-align: left;
+}
+
+.fa-stack {
+  width: 14.5rem;
+}
+
 .home-header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
@@ -1100,7 +1109,6 @@ aside {
         -ms-flex-pack: end;
             justify-content: flex-end;
     position: relative;
-    overflow: hidden;
   }
 
   .mini-nav-menu {
@@ -1109,6 +1117,7 @@ aside {
     z-index: 15;
     background-color: #2c2c2c;
     top: 100%;
+    visibility: hidden;
   }
 
   .mini-nav-menu li {
@@ -1117,8 +1126,22 @@ aside {
     padding: 2rem 0;
   }
 
+  .mini-nav-menu li:hover,
+.mini-nav-menu li:focus {
+    background-color: #535353;
+  }
+
   .mini-nav-menu li a {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+  }
+
+  .mini-menu {
+    position: absolute;
+    opacity: 10%;
+  }
+
+  .mini-menu:checked + .mini-nav-menu {
+    visibility: visible;
   }
 
   .header-container {
@@ -1433,5 +1456,9 @@ aside {
 
   .contact-page-header-container h1 {
     margin: 0 auto;
+  }
+
+  .mini-nav-menu li a {
+    font-size: 1.8rem;
   }
 }
