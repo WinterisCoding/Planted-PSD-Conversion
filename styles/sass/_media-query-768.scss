@@ -38,12 +38,15 @@
   }
   .mini-menu {
     position: absolute;
-    opacity: 10%;
+    opacity: 0%;
   }
   .mini-menu:checked + .mini-nav-menu {
     visibility: visible;
   }
-
+  // Hey David, I wanted to add a focus effect to a hidden checbox here,
+  // however, after two days of googling and office hours help I couldn't,
+  // figure out how to make the icon show a focus effect when the checkbox
+  // was focused. 
   .header-container {
     display: flex;
     justify-content: center;
