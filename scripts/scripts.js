@@ -39,13 +39,14 @@ formElement.addEventListener('submit', function(event) {
 
 const postComment = function(userName, userComment) {
   const newCommentBox = document.createElement('div');
-  newCommentBox.innerHTML = `<div class="comment-image-container">
-  <img src="" alt="">
-</div> <!-- end of box image-container -->
-<div class="comment-text-container">
-  <h6 class="commentHeading"></h6>
-  <p class="commentParagraph"></p>
-</div> <!--end of box text-container -->
+  newCommentBox.innerHTML = `
+  <div class="comment-image-container">
+    <img src="https://placekitten.com/200/300" alt="">
+  </div> <!-- end of box image-container -->
+  <div class="comment-text-container">
+    <h6 class="commentHeading"></h6>
+    <p class="commentParagraph"></p>
+  </div> <!--end of box text-container -->
 </div> <!-- end of comment-box1-->`
 
   const newParagraph = newCommentBox.querySelector('.commentParagraph');
@@ -54,8 +55,6 @@ const postComment = function(userName, userComment) {
   const newHeading = newCommentBox.querySelector('.commentHeading');
   newHeading.textContent = userName;
 
-  
-
-  console.log(newParagraph.textContent)
-  console.log(newHeading.textContent)
+  const containerElement = document.querySelector('.comment-container');
+  containerElement.appendChild(newCommentBox)
 };
