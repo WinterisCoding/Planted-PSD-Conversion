@@ -3,7 +3,7 @@
 //  1b. Prevent the default form behavior
 //  1c. Get the value the user wrote from the page
 //    - Create a variable to hold the userName
-//    - Create a variable to hold the userEmail
+//    - Create a variable to hold the userDate
 //    - Create a variable to hold the UserComment
 //  1d. Clear the input after submission
 
@@ -18,7 +18,6 @@
 
 // Get the Form From the page
 const formElement = document.querySelector('.post-comment')
-
 // add an event listener to the form for "submit event"
 formElement.addEventListener('submit', function(event) {
 // prevent the default behavior of the submit event
@@ -29,16 +28,34 @@ formElement.addEventListener('submit', function(event) {
 // Store the user's "Name" input in a variable
   const userName = inputName.value;
 
+  // Get the "email"input from the page
+  const inputEmail = document.querySelector('#email');
+  const userEmail = inputEmail.value
+
+// Gets the date that the comment was submitted
+  const currentDate = new Date;
+  const values = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+// Stores the date the comment was submitted in correct format in a varible.
+  userDate = currentDate.toLocaleDateString(undefined,values);
+
 // Get the "comment" input from the page
   const inputComment = document.querySelector('#comment')
 // Store the user's "Comment" in a variable
   const userComment = inputComment.value;
-
-  postComment(userName, userComment);
+  
+  if (userName, userEmail, userComment) {
+    inputName.value = '';
+    inputEmail.value = '';
+    inputComment.value = '';
+    postComment(userName, userDate, userComment);
+  }
 });
 
-const postComment = function(userName, userComment) {
+// This function takes the info from the event listener and appends it to the page on submit
+const postComment = function(userName, userDate, userComment) {
   const newCommentBox = document.createElement('div');
+  // adds the correct class to the new div so it is styled properly
+  newCommentBox.classList.add('comment-box')
   newCommentBox.innerHTML = `
   <div class="comment-image-container">
     <img src="https://placekitten.com/200/300" alt="">
@@ -53,7 +70,7 @@ const postComment = function(userName, userComment) {
   newParagraph.textContent = userComment;
 
   const newHeading = newCommentBox.querySelector('.commentHeading');
-  newHeading.textContent = userName;
+  newHeading.textContent = `${userDate} by ${userName}`;
 
   const containerElement = document.querySelector('.comment-container');
   containerElement.appendChild(newCommentBox)
